@@ -22,3 +22,4 @@ apt-get install -y --no-install-recommends docker-ce docker-ce-cli containerd.io
 
 # echo "docker-installed" > /etc/containerous.com/state
 
+echo "Done installing docker"

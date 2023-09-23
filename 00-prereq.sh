@@ -74,7 +74,7 @@ echo "test" > mnt/test/test.txt
 
 
 # https://raw.githubusercontent.com/jpetazzo/nsenter/master/docker-enter
-cat <<EOF > docker-enter
+cat <<'EOF' > docker-enter
 #!/bin/sh
 
 if [ -e $(dirname "$0")/nsenter ]; then
@@ -130,3 +130,5 @@ EOF
 
 cp docker-enter /usr/local/bin
 chmod a+x /usr/local/bin/docker-enter
+
+echo "Done installing tools."
