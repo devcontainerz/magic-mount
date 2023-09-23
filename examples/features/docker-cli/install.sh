@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+
+echo "INSTALL.sh" >/root/install_sh_success.txt
+
 set -o errexit -o pipefail -o noclobber -o nounset
 
 readonly name='docker'
