@@ -3,4 +3,4 @@
 
 echo "Container ID: $CONTAINER_ID"
 
-# docker exec -d $CONTAINER_ID mkdir -p /mnt/magic
+echo "docker exec -d $CONTAINER_ID mkdir -p /mnt/magic"
