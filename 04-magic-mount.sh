@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/bash
 
 # https://jpetazzo.github.io/2015/01/13/docker-mount-dynamic-volumes/
 
