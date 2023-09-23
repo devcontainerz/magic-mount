@@ -216,7 +216,7 @@ main() {
 main "$@"
 EOF
 install -m 0755 -d mount-to-container /usr/local/bin
-rm mount-to-container.sh
+rm mount-to-container
 
 
 # #############################################################################################################
