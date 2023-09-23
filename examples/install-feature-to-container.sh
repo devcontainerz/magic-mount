@@ -22,6 +22,7 @@ main() {
 	local CONTAINER=$1
 	local FEATUREPATH=$2
 	echo "Installing feature ${FEATUREPATH} to container ${CONTAINER}"
+	docker exec -d $CONTAINER "mkdir /featureInstall"
 	mount-to-container $CONTAINER $FEATUREPATH /featureInstall
 	docker exec -d $CONTAINER "/featureInstall/install.sh"
 

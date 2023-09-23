@@ -11,10 +11,12 @@ echo "Container ID: $CONTAINER_ID"
 export CONTAINER_ID=$CONTAINER_ID
 
 
+sleep 1
+
 # #############################################################################################################
 
 
-/root/magic-mount/examples/install-feature-to-container.sh $CONTAINER_ID /root/magic-mount/examples/features/docker-cli
+/root/magic-mount/examples/install-feature-to-container.sh "$CONTAINER_ID" "/root/magic-mount/examples/features/docker-cli"
 
 # #############################################################################################################
 
