@@ -160,7 +160,7 @@ echo "Done installing docker"
 # #############################################################################################################
 
 # TODO : Check "--" removed (see: https://jpetazzo.github.io/2015/01/13/docker-mount-dynamic-volumes/)
-cat <<'EOF' > mount-to-container.sh
+cat <<'EOF' > mount-to-container
 #!/usr/bin/env bash
 
 set -o errexit
@@ -171,7 +171,7 @@ if [[ "${TRACE-0}" == "1" ]]; then
 fi
 
 if [[ "${1-}" =~ ^-*h(elp)?$ ]]; then
-	echo 'Usage: ./mount-to-container.sh <container> <hostpath> <containerpath>
+	echo 'Usage: ./mount-to-container <container> <hostpath> <containerpath>
 
 This mounts $HOSTPATH into $CONTAINERPATH into the running container $CONTAINER.
 
@@ -215,7 +215,7 @@ main() {
 
 main "$@"
 EOF
-install -m 0755 -d mount-to-container.sh /usr/local/bin
+install -m 0755 -d mount-to-container /usr/local/bin
 rm mount-to-container.sh
 
 
