@@ -12,7 +12,7 @@ echo "Container ID: $CONTAINER_ID"
 export CONTAINER_ID=$CONTAINER_ID
 
 
-sleep 1
+sleep 2
 
 # #############################################################################################################
 
