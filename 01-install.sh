@@ -215,7 +215,7 @@ main() {
 
 main "$@"
 EOF
-install -m 0755 -d mount-to-container /usr/local/bin
+install -m 0755 mount-to-container /usr/local/bin
 rm mount-to-container
 
 
