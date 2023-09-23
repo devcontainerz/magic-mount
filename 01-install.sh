@@ -1,5 +1,3 @@
-#!/usr/bin/env sh
-
 #!/usr/bin/bash
 
 echo "Installing tools…"

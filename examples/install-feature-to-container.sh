@@ -24,6 +24,9 @@ main() {
 	echo "Installing feature ${FEATUREPATH} to container ${CONTAINER}"
 	mount-to-container $CONTAINER $FEATUREPATH /featureInstall
 	docker exec -d $CONTAINER "/featureInstall/install.sh"
+
+	echo "DONE" > /root/DONE.txt
+
 }
 
 
