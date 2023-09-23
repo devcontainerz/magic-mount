@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 ./02-make-container.sh
 ./03-create-mnt-in-container.sh
