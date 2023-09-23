@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "INSTALL.sh" >/root/install_sh_success.txt
+echo "INSTALL.sh nnnn" >/root/install_sh_success.txt
 VERSION="latest"
 
 # set -o errexit -o pipefail -o noclobber -o nounset
