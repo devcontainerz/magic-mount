@@ -58,4 +58,4 @@ docker-enter $CONTAINER -- rmdir /tmpmnt
 
 
 echo "Running docker exec to enter shell"
-docker exec -it $CONTAINER_ID /bin/bash
+docker exec -it $CONTAINER_ID -- /bin/bash
