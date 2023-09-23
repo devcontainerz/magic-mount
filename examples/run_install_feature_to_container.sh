@@ -17,7 +17,7 @@ sleep 2
 # #############################################################################################################
 
 
-/root/magic-mount/examples/install-feature-to-container.sh "$CONTAINER_ID" "/root/magic-mount/examples/features/docker-cli"
+/root/magic-mount/examples/install-feature-to-container.sh "$CONTAINER_ID" "/root/magic-mount/examples/features/starship"
 
 # #############################################################################################################
 

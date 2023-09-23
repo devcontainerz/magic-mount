@@ -1,0 +1,17 @@
+{
+    // "$schema": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainerFeature.schema.json",
+    "name": "starship",
+    "id": "starship",
+    "version": "0.0.1",
+    "description": "Install starship in devcontainer",
+    "options": {
+      "version": {
+          // https://github.com/starship/starship/tags
+          "type": "string",
+          "proposals": ["1.13.1"],
+          "default": "latest",
+          "description": "Version of starship to install."
+      }
+    }
+  }
+  
