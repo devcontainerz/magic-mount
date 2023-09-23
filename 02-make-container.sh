@@ -9,6 +9,6 @@ echo "Container Built"
 
 docker ps
 
-export CONTAINER_ID=$(docker ps -q)
+CONTAINER_ID=$(docker ps -q)
 
 echo "Container ID: $CONTAINER_ID"
