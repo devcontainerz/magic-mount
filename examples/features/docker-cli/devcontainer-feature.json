@@ -1,0 +1,13 @@
+{
+    "name": "docker-cli",
+    "id": "docker-cli",
+    "version": "0.0.1",
+    "description": "Install Docker CLI in devcontainer",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": "latest",
+            "description": "Version of the Docker CLI to install."
+        }
+    }
+}
