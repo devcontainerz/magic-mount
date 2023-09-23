@@ -3,7 +3,7 @@
 echo "INSTALL.sh" >/root/install_sh_success.txt
 VERSION="latest"
 
-set -o errexit -o pipefail -o noclobber -o nounset
+# set -o errexit -o pipefail -o noclobber -o nounset
 
 readonly name='docker'
 # [feature options]
