@@ -18,13 +18,14 @@ if ! command -v curl >/dev/null 2>&1; then
 fi
 
 readonly version="${VERSION:-1.13.1}"
-
+readonly file="https://github.com/starship/starship/releases/download/v${version}/starship-x86_64-unknown-linux-gnu.tar.gz"
 
 echo '=== Download starship prompt binary from GitHub Releases to "/usr/local/bin/starship"'
+echo "=== --- Download from: ${file}"
 curl \
   -sL\
   -o- \
-  "https://github.com/starship/starship/releases/download/v${version}/starship-x86_64-unknown-linux-gnu.tar.gz" \
+  ${file} \
 | tar \
   -xz \
   -C /usr/local/bin/ \
