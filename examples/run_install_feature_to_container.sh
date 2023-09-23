@@ -3,7 +3,7 @@
 
 
 echo "Building Container"
-docker run -d nginx:latest
+docker run -d debian:latest
 echo "Container Built"
 docker ps
 CONTAINER_ID=$(docker ps -q)
