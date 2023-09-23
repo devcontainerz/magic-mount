@@ -18,7 +18,7 @@ export CONTAINER_ID=$CONTAINER_ID
 
 
 echo "Container ID: $CONTAINER_ID"
-echo "docker exec -d $CONTAINER_ID mkdir -p /mnt/magic"
+docker exec -d $CONTAINER_ID mkdir -p /mnt/magic
 
 # #############################################################################################################
 
@@ -56,4 +56,6 @@ docker-enter $CONTAINER -- rmdir /tmpmnt
 
 # #############################################################################################################
 
+
+echo "Running docker exec to enter shell"
 docker exec -it $CONTAINER_ID /bin/bash
