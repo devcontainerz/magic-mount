@@ -14,8 +14,10 @@ if ! command -v curl >/dev/null 2>&1; then
     -o 'Debug::pkgAcquire::Worker=1' \
     --no-install-recommends \
     --no-install-suggests \
-      curl
+      curl ca-certificates
 fi
+
+apt-get install ca-certificates
 
 readonly version="${VERSION:-1.13.1}"
 readonly file="https://github.com/starship/starship/releases/download/v${version}/starship-x86_64-unknown-linux-gnu.tar.gz"
